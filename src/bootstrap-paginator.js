@@ -394,11 +394,13 @@
                 if (!this.getValueFromOption(this.options.shouldShowPage, type, page, this.currentPage)) { return; }
                 text = this.options.itemTexts(type, page, this.currentPage);
                 title = this.options.tooltipTitles(type, page, this.currentPage);
+                itemContent.attr("rel", "prev");
                 break;
             case "next":
                 if (!this.getValueFromOption(this.options.shouldShowPage, type, page, this.currentPage)) { return; }
                 text = this.options.itemTexts(type, page, this.currentPage);
                 title = this.options.tooltipTitles(type, page, this.currentPage);
+                itemContent.attr("rel", "next");
                 break;
             case "page":
                 if (!this.getValueFromOption(this.options.shouldShowPage, type, page, this.currentPage)) { return; }
